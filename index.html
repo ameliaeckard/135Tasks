@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>1-3-5 Task List</title>
+  <link rel="stylesheet" href="src/index.css">
+  <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.6.0/dist/confetti.browser.min.js"></script>
+</head>
+<body>
+    <div class="bodycontainer">
+        <h1>✓ Task List</h1>
+        <button id="theme-toggle">🌙 Toggle Theme</button>
+        <button id="reset-button">Reset</button>
+        <div id="progress-container">
+          <div id="progress-bar"></div>
+        </div>
+        <div class="container">
+          <div class="task-column" id="large">
+            <h2>Large <span>(1)</span></h2>
+            <ul class="task-list" id="large-list"></ul>
+            <input type="text" id="large-input" placeholder="Add large task..." />
+          </div>
+      
+          <div class="task-column" id="medium">
+            <h2>Medium <span>(3)</span></h2>
+            <ul class="task-list" id="medium-list"></ul>
+            <input type="text" id="medium-input" placeholder="Add medium task..." />
+          </div>
+      
+          <div class="task-column" id="small">
+            <h2>Small <span>(5)</span></h2>
+            <ul class="task-list" id="small-list"></ul>
+            <input type="text" id="small-input" placeholder="Add small task..." />
+          </div>
+        </div>
+      </div>
+  <script src="src/renderer.js"></script>
+</body>
+</html>
